@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Lift &amp; Fuel Support</title>
+  <link rel="stylesheet" href="../policy.css">
+</head>
+<body>
+<main>
+  <p class="eyebrow">Lift &amp; Fuel &middot; Support</p>
+  <h1>Support</h1>
+  <p class="meta">Updated 30 August 2026</p>
+
+  <div class="summary">
+    <strong>Need a hand?</strong> Email
+    <a href="mailto:lift.fuel@outlook.com">lift.fuel@outlook.com</a>. One person reads it —
+    Emmanuel Omar, who makes the app — and replies within about two business days. Tell us your
+    iPhone model, the iOS version and what you were doing when it went wrong, and you will get a
+    straight answer rather than a ticket number.
+  </div>
+
+  <h2>What Lift &amp; Fuel is</h2>
+  <p>An offline-first lifting and food logbook for iPhone. There is no account and no sign-in: your
+    training, food, weigh-ins, recovery and profile live in the app's own database on your phone,
+    and the food catalogue and exercise list are built into the app, so searching and logging work
+    with no connection at all. Everything else is optional and stays off until you turn it on:
+    Apple Health, barcode scanning, local reminders, and sync to a server you host yourself. No
+    analytics, no advertising, no tracking of any kind.</p>
+
+  <h2>Do I need an account or an internet connection?</h2>
+  <p>Neither. No account, no sign-in, no password, and the app is fully usable on a plane. With
+    sync off, the only time it touches the network is when you scan a barcode it does not already
+    know — it sends that barcode number to Open Food Facts and nothing else. Server Sync is for
+    people running their own Lift &amp; Fuel server and is off until you set one up.</p>
+
+  <h2>Where does my data live, and what if I lose my phone?</h2>
+  <p>In the app's own database on the device. There is no cloud account behind it, so there is
+    nothing for us to recover on your behalf — which is the trade for it being nobody's business
+    but yours. What protects you is the automatic backup: once a day the app writes a dated
+    snapshot of the whole logbook into its own folder and keeps the last seven. Those files are
+    visible in the Files app and ride your iPhone's own iCloud or computer backup, so a restored
+    phone brings them with it. For a copy you fully control, use
+    <strong>Setup &rarr; Settings &rarr; Your data &rarr; Export everything</strong>.</p>
+
+  <h2>How do I move my logbook to a new phone?</h2>
+  <p>On the old phone, export everything — that writes a real <code>.json</code> file and opens the
+    share sheet, so AirDrop, Save to Files or Mail all produce something that restores. On the new
+    phone, put that file into the Lift &amp; Fuel folder in the Files app, then open
+    <strong>Setup &rarr; Settings &rarr; On-phone backups</strong>, where it appears under
+    &ldquo;Restore from a file&rdquo;. Restoring is fill-only: it adds what the phone is missing and
+    never overwrites anything already there, so the worst it can do is nothing. Strong and Hevy CSV
+    exports can be dropped into the same folder and folded in the same way.</p>
+
+  <h2>A barcode came back &ldquo;not in the database&rdquo;</h2>
+  <p>A scan checks your own foods first — instant and offline — then asks Open Food Facts, a public
+    food database. That message means nobody has catalogued the product yet; it is not a fault on
+    your phone. Tap <strong>Enter it from the pack</strong>, type the numbers off the label once,
+    and the barcode stays attached to that food, so the next scan finds it instantly and without a
+    connection. &ldquo;Couldn't reach the food database&rdquo; is a different message and means a
+    network problem — retry, or enter it by hand and it still keeps the barcode.</p>
+
+  <h2>Why does the scanner want the camera?</h2>
+  <p>Only to read the barcode while the scanner is open. Nothing is photographed, recorded or
+    stored, and the camera is not used anywhere else in the app. If you declined and changed your
+    mind, the scanner has a button straight to iOS Settings — or just search for the food by name.</p>
+
+  <h2>What is Apple Health used for, and how do I turn it off?</h2>
+  <p>It is optional, off until you connect it, and the scope is deliberately small. It reads two
+    things: your body weight, which fills in any day you did not weigh in by hand, and how long you
+    slept last night, which appears on Recover and feeds the readiness estimate. It writes back the
+    weigh-ins you enter and the strength sessions you finish, so your other apps can see them.
+    Anything read from Health stays on the phone and is never included in a server backup. To stop
+    it: <strong>Setup &rarr; Settings &rarr; Apple Health &rarr; Disconnect</strong>. To revoke the
+    permission itself, use iOS Settings &rarr; Health.</p>
+
+  <h2>My reminders have stopped appearing</h2>
+  <p>Almost always one of three things. Notification permission: the app asks once, and after a
+    &ldquo;no&rdquo; iOS will not let it ask again — check iOS Settings &rarr; Notifications &rarr;
+    Lift &amp; Fuel. The iOS ceiling: iOS keeps only 64 pending notifications per app and silently
+    drops the rest, so the app merges supplements that share a time and warns you in Alerts when you
+    are near the limit. Or the reminder is simply skipped for today, which clears itself tomorrow.
+    The quickest test is <strong>Alerts &rarr; Send a test in 5 seconds</strong>. You never need to
+    re-tap &ldquo;Schedule my reminders&rdquo; after an edit; edits reschedule themselves.</p>
+
+  <h2>The weight in one of my saved workouts changed by itself</h2>
+  <p>That is deliberate. When a finished session sets a record on a lift, the saved workouts holding
+    that lift learn the new weight, so next time you start where you actually got to. Three rules
+    hold it back: it only ever goes up, so a deload or a bad day never lowers your plan; a workout
+    you built with a different weight per set is left alone; and a record done for far fewer reps
+    than the plan asks does not move it — a heavy single will not rewrite a 5&times;5. The finish
+    screen lists exactly what changed and what was kept, and reopening that session puts the weights
+    back.</p>
+
+  <h2>The weight box suggests a number I did not type</h2>
+  <p>That is the next-set suggestion, read from your last outing of that lift — advice for today,
+    not a programme. If every working set hit the rep target it offers one real step up: 2.5 kg on a
+    bar, Smith or cable, 1 kg on dumbbells under 10 and 2.5 above, 5 kg on a machine stack.
+    Bodyweight work chases the next rep instead. If a set fell short it keeps the weight and asks
+    for one more rep on your weakest set. Tap the line to load it, or type your own — nothing is
+    applied until you do.</p>
+
+  <h2>What does &ldquo;Delete everything&rdquo; actually delete?</h2>
+  <p>Everything on the phone: training, food, weigh-ins, recovery, reminders, every setting, the
+    sync token out of the phone's secure storage, and the app's own backup files — both the daily
+    snapshots and the exports it wrote. It asks twice and cannot be undone in the app, so export
+    first if you want a copy. Two things it cannot reach: backups already sent to a sync server,
+    which you delete on the server itself, and a copy inside your device's own iCloud or computer
+    backup, which stays Apple's until that backup rotates. Files you put into the app's folder
+    yourself are left alone.</p>
+
+  <h2>Something else, or a bug</h2>
+  <p>Email <a href="mailto:lift.fuel@outlook.com">lift.fuel@outlook.com</a> with your iPhone model,
+    your iOS version, and what you did just before it went wrong. Screenshots help. If it involves
+    data you think went missing, do not delete anything first — say so in the message, because the
+    dated backups on the phone can usually be read.</p>
+
+  <h2>Privacy and terms</h2>
+  <p>The full <a href="https://emmanuelomar.github.io/liftfuel/privacy/2026-08-23/">Privacy
+    Policy</a> and <a href="https://emmanuelomar.github.io/liftfuel/terms/2026-08-10/">Terms of
+    Use</a> are published here, and the same words are bundled inside the app under Setup &rarr;
+    Settings &rarr; Privacy &amp; terms. Privacy questions and requests go to the same address:
+    <a href="mailto:lift.fuel@outlook.com">lift.fuel@outlook.com</a>.</p>
+
+  <footer>Lift &amp; Fuel is made by Emmanuel Omar, Macquarie Fields NSW, Australia.<br>
+    Copyright © 2026 Lift &amp; Fuel. Original software, artwork and content. All rights reserved.</footer>
+</main>
+</body>
+</html>
