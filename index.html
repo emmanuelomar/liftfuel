@@ -175,7 +175,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
       </div>
       <div class="truth reveal">
         <div class="k">Works offline</div>
-        <div class="v">Everything runs on the phone. The network is only used for the two things below.</div>
+        <div class="v">Everything runs on the phone. The only thing that reaches the internet is a barcode scan.</div>
       </div>
     </div>
   </header>
@@ -184,8 +184,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
     <div class="section-head">
       <p class="eyebrow"><span class="idx">01</span> &middot; Where your data goes</p>
       <h2>Every place the app can reach, and what it sends.</h2>
-      <p>Two of these five stay entirely on the phone. The other two only ever
-        happen because you asked for them, and they send the least possible.</p>
+      <p>Three of these four stay entirely on the phone. The fourth happens only
+        when you scan a barcode, and it sends the least possible.</p>
     </div>
 
     <div class="flow">
@@ -193,8 +193,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
       <article class="card reveal">
         <h3>Your training and food log</h3>
         <p>Every workout, set, meal, macro, weigh in, reminder and routine is saved
-          in a database on your phone, protected by your iPhone's own security. By
-          default it is never uploaded anywhere.</p>
+          in a database on your phone, protected by your iPhone's own security. It is
+          never uploaded anywhere.</p>
         <span class="tag stay">On this phone</span>
       </article>
 
@@ -205,7 +205,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
           can see them. This reading and writing happens on the device.</p>
         <span class="tag stay">On this phone</span>
         <div class="route">
-          <span><b>Health data never leaves the phone</b>, even when Server Sync is on.</span>
+          <span><b>Health data never leaves the phone.</b></span>
         </div>
       </article>
 
@@ -219,31 +219,20 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
       <article class="card reveal">
         <h3>Barcode lookups</h3>
         <p>When you scan a barcode, the app looks the product up in Open Food Facts,
-          a public food database. Only the barcode number is sent. Nothing about you
-          goes with it, and there is no account.</p>
+          a public food database. The barcode number is all that is sent. Nothing about
+          you goes with it, and there is no account.</p>
+        <p>If that lookup returns a photograph of the product, showing it fetches the
+          image from Open Food Facts as well. Like any image on the internet, that
+          request carries your phone's IP address. The app will only load a photograph
+          from Open Food Facts itself, never from anywhere else.</p>
         <span class="tag leave">Leaves the phone</span>
         <div class="route">
-          <span><b>Sends:</b> a barcode number</span>
+          <span><b>Sends:</b> a barcode number, then a request for the photograph</span>
           <span class="arrow">&rarr;</span>
           <span><b>To:</b> Open Food Facts</span>
         </div>
       </article>
 
-      <article class="card reveal">
-        <h3>Server Sync <span style="font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.1em"> &middot; OFF BY DEFAULT</span></h3>
-        <p>Server Sync is switched off until you turn it on, and you point it at a
-          server you run yourself. When it is on, the app sends a backup of your
-          records over an encrypted connection and downloads approved reference
-          updates. The backup is a copy only, so the server can never change what is
-          on your phone. Your sync token, and any weigh ins imported from Health, are
-          deliberately left out of every backup.</p>
-        <span class="tag leave">Leaves the phone</span>
-        <div class="route">
-          <span><b>Only if you enable it</b></span>
-          <span class="arrow">&rarr;</span>
-          <span><b>To:</b> a server you choose</span>
-        </div>
-      </article>
 
     </div>
   </section>
@@ -277,8 +266,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
         <p>Your records live on the phone. Deleting them, or removing the app, takes the data with it.</p>
       </div>
       <div class="card reveal">
-        <h3>Sync is your choice</h3>
-        <p>Server Sync started off. You can turn it on, and turn it back off, at any time.</p>
+        <h3>No account, no server</h3>
+        <p>There is nothing to sign in to and no server of ours for your records to sit on.</p>
       </div>
       <div class="card reveal">
         <h3>Health stays put</h3>
@@ -293,8 +282,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
         is built. The Privacy Policy and Terms of Use are the formal documents, and
         they are what govern your use of the app.</p>
       <div class="foot-links">
-        <a href="https://emmanuelomar.github.io/liftfuel/privacy/2026-09-07/">Privacy Policy</a>
-        <a href="https://emmanuelomar.github.io/liftfuel/terms/2026-09-07/">Terms of Use</a>
+        <a href="https://emmanuelomar.github.io/liftfuel/privacy/2026-09-08/">Privacy Policy</a>
+        <a href="https://emmanuelomar.github.io/liftfuel/terms/2026-09-08/">Terms of Use</a>
         <a href="https://emmanuelomar.github.io/liftfuel/support/">Support</a>
         <a href="mailto:lift.fuel@outlook.com">Contact</a>
       </div>
