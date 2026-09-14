@@ -11,7 +11,7 @@
 <main>
   <p class="eyebrow">Lift &amp; Fuel &middot; Support</p>
   <h1>Support</h1>
-  <p class="meta">Updated 30 August 2026</p>
+  <p class="meta">Updated 14 September 2026</p>
 
   <div class="summary">
     <strong>Need a hand?</strong> Email
@@ -26,22 +26,24 @@
     training, food, weigh-ins, recovery and profile live in the app's own database on your phone,
     and the food catalogue and exercise list are built into the app, so searching and logging work
     with no connection at all. Everything else is optional and stays off until you turn it on:
-    Apple Health, barcode scanning, local reminders, and sync to a server you host yourself. No
-    analytics, no advertising, no tracking of any kind.</p>
+    Apple Health, barcode scanning and local reminders. There is no server behind the app and
+    nothing to sync to. No analytics, no advertising, no tracking of any kind.</p>
 
   <h2>Do I need an account or an internet connection?</h2>
-  <p>Neither. No account, no sign-in, no password, and the app is fully usable on a plane. With
-    sync off, the only time it touches the network is when you scan a barcode it does not already
-    know — it sends that barcode number to Open Food Facts and nothing else. Server Sync is for
-    people running their own Lift &amp; Fuel server and is off until you set one up.</p>
+  <p>Neither. No account, no sign-in, no password, and the app is fully usable on a plane. The
+    only time it touches the network is when you scan a barcode it does not already know: it sends
+    that barcode number to Open Food Facts and, when they have the product, loads its photograph
+    from them so you can check it is the right item. The app sends nothing else anywhere. Server
+    sync was removed on 4 September 2026, so there is no server to set up or sync to.</p>
 
   <h2>Where does my data live, and what if I lose my phone?</h2>
   <p>In the app's own database on the device. There is no cloud account behind it, so there is
     nothing for us to recover on your behalf — which is the trade for it being nobody's business
     but yours. What protects you is the automatic backup: once a day the app writes a dated
-    snapshot of the whole logbook into its own folder and keeps the last seven. Those files are
-    visible in the Files app and ride your iPhone's own iCloud or computer backup, so a restored
-    phone brings them with it. For a copy you fully control, use
+    snapshot of your logbook into its own folder and keeps the last seven. Your cycle history and
+    anything read from Apple Health are left out of those snapshots. The files are visible in the
+    Files app and ride your iPhone's own iCloud or computer backup, so a restored phone brings them
+    with it. For a complete copy you fully control, cycle history included, use
     <strong>Setup &rarr; Settings &rarr; Your data &rarr; Export everything</strong>.</p>
 
   <h2>How do I move my logbook to a new phone?</h2>
@@ -67,11 +69,14 @@
     mind, the scanner has a button straight to iOS Settings — or just search for the food by name.</p>
 
   <h2>What is Apple Health used for, and how do I turn it off?</h2>
-  <p>It is optional, off until you connect it, and the scope is deliberately small. It reads two
-    things: your body weight, which fills in any day you did not weigh in by hand, and how long you
-    slept last night, which appears on Recover and feeds the readiness estimate. It writes back the
-    weigh-ins you enter and the strength sessions you finish, so your other apps can see them.
-    Anything read from Health stays on the phone and is never included in a server backup. To stop
+  <p>It is optional, off until you connect it, and the scope is deliberately small. It reads your
+    body weight, which shows in your weight trend and helps estimate what you burn but never changes
+    the weight your targets are worked out from (only weights you log in the app do that), and how
+    long you slept last night, which appears on Recover and feeds the readiness estimate. If you
+    choose Apple Health as your period source in the Cycle card, it also reads your logged menstrual
+    flow. It writes back the weigh-ins you enter and the strength sessions you finish, so your other
+    apps can see them. Anything read from Health stays on the phone, kept apart from your log and
+    out of the automatic backups, your export and your device's iCloud and computer backups. To stop
     it: <strong>Setup &rarr; Settings &rarr; Apple Health &rarr; Disconnect</strong>. To revoke the
     permission itself, use iOS Settings &rarr; Health.</p>
 
@@ -102,13 +107,13 @@
     applied until you do.</p>
 
   <h2>What does &ldquo;Delete everything&rdquo; actually delete?</h2>
-  <p>Everything on the phone: training, food, weigh-ins, recovery, reminders, every setting, the
-    sync token out of the phone's secure storage, and the app's own backup files — both the daily
-    snapshots and the exports it wrote. It asks twice and cannot be undone in the app, so export
-    first if you want a copy. Two things it cannot reach: backups already sent to a sync server,
-    which you delete on the server itself, and a copy inside your device's own iCloud or computer
-    backup, which stays Apple's until that backup rotates. Files you put into the app's folder
-    yourself are left alone.</p>
+  <p>Everything on the phone: training, food, weigh-ins, recovery, reminders and their scheduled
+    notifications, your cycle history, every setting, what the app read from Apple Health, and the
+    app's own backup files — both the daily snapshots and the exports it wrote. It asks twice and
+    cannot be undone in the app, so export first if you want a copy. Two things it cannot reach: a
+    copy inside your device's own iCloud or computer backup, which stays Apple's until that backup
+    rotates, and weigh-ins and workouts already written to Apple Health, which you remove in the
+    Health app. Files you put into the app's folder yourself are left alone.</p>
 
   <h2>Something else, or a bug</h2>
   <p>Email <a href="mailto:lift.fuel@outlook.com">lift.fuel@outlook.com</a> with your iPhone model,
