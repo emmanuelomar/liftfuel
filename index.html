@@ -1,5 +1,8 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lift & Fuel — Security</title>
-<meta name="description" content="How Lift & Fuel handles your data: on your phone, no account, no tracking.">
+<meta name="description" content="How Lift & Fuel handles your data: on-device personal logging, optional Friends sharing, no advertising or tracking.">
 
 <style>
 /* Space Grotesk — the app's display face (SIL OFL 1.1), inlined so the page
@@ -160,14 +163,14 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
     </div>
     <p class="eyebrow">What we do with your data</p>
     <h1>Your log lives<br>on your phone.</h1>
-    <p class="lede">No account to make. No ads. No tracking. Lift &amp; Fuel works
-      <b>fully offline</b>, and your training and food records stay on your device
-      unless you decide to send them somewhere yourself.</p>
+    <p class="lede">No ads. No tracking. Personal logging works <b>offline without an account</b>.
+      Your log stays on your device by default. Friends uses a separate account and shares
+      only the information you choose through its optional features.</p>
 
     <div class="truths">
       <div class="truth reveal">
         <div class="k">No account</div>
-        <div class="v">There is no sign up and no login. You open the app and start.</div>
+        <div class="v">Personal logging needs no sign-in. Optional Friends uses Sign in with Apple.</div>
       </div>
       <div class="truth reveal">
         <div class="k">No tracking</div>
@@ -175,7 +178,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
       </div>
       <div class="truth reveal">
         <div class="k">Works offline</div>
-        <div class="v">Everything runs on the phone. The only thing that reaches the internet is a barcode scan.</div>
+        <div class="v">Personal logging works offline. Friends, Apple Maps and barcode lookups use the internet when you use them.</div>
       </div>
     </div>
   </header>
@@ -184,8 +187,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
     <div class="section-head">
       <p class="eyebrow"><span class="idx">01</span> &middot; Where your data goes</p>
       <h2>Every place the app can reach, and what it sends.</h2>
-      <p>Three of these four stay entirely on the phone. The fourth happens only
-        when you scan a barcode, and it sends the least possible.</p>
+      <p>Your personal log is stored on your phone. Optional features contact the services
+        described below; the Privacy Policy explains their permissions and retention.</p>
     </div>
 
     <div class="flow">
@@ -194,7 +197,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
         <h3>Your training and food log</h3>
         <p>Every workout, set, meal, macro, weigh in, reminder and routine is saved
           in a database on your phone, protected by your iPhone's own security. It is
-          never uploaded anywhere.</p>
+          not uploaded to our service as a complete log. You can deliberately export records,
+          share a Story or choose the limited Friends sharing described below.</p>
         <span class="tag stay">On this phone</span>
       </article>
 
@@ -205,7 +209,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
           can see them. This reading and writing happens on the device.</p>
         <span class="tag stay">On this phone</span>
         <div class="route">
-          <span><b>Health data never leaves the phone.</b></span>
+          <span><b>Health readings are kept separately from ordinary logbook backups and exports.</b></span>
         </div>
       </article>
 
@@ -233,6 +237,23 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
         </div>
       </article>
 
+      <article class="card reveal">
+        <h3>Optional Friends</h3>
+        <p>Sign in with Apple provides an account identifier and shared or relay email to our
+          Supabase service in Sydney. Joining a circle does not turn on activity sharing.
+          Available chat, goal, plan and training-status features have their own choices.</p>
+        <p>Only the information you choose is shared with eligible members and the beta operator.
+          Routes, heart-rate series, food, weight and Cycle records are not sent to Friends.</p>
+        <span class="tag leave">Separate sharing choices</span>
+      </article>
+
+      <article class="card reveal">
+        <h3>Apple Maps and the paired Watch</h3>
+        <p>Opening a live or saved map uses Apple's map service and discloses the displayed area
+          to Apple. Optional automatic run syncing can exchange a Lift &amp; Fuel Watch run's
+          live route and totals with its paired iPhone. This does not send routes to Friends.</p>
+        <span class="tag leave">Optional connections</span>
+      </article>
 
     </div>
   </section>
@@ -246,8 +267,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
       <li><span class="bullet">&#10005;</span><span class="txt"><b>No advertising.</b> There are no ads and no ad networks in the app.</span></li>
       <li><span class="bullet">&#10005;</span><span class="txt"><b>No analytics.</b> Your taps and screens are not measured or reported.</span></li>
       <li><span class="bullet">&#10005;</span><span class="txt"><b>No behavioural tracking.</b> Nothing profiles you across apps or sites.</span></li>
-      <li><span class="bullet">&#10005;</span><span class="txt"><b>No selling or sharing.</b> Your data is not a product and is never sold.</span></li>
-      <li><span class="bullet">&#10005;</span><span class="txt"><b>No third party logins.</b> There is no account to link and none is asked for.</span></li>
+      <li><span class="bullet">&#10005;</span><span class="txt"><b>No selling.</b> We do not sell your personal information. Optional sharing has separate controls.</span></li>
+      <li><span class="bullet">&#10005;</span><span class="txt"><b>No required login for your log.</b> Sign in with Apple is only needed for optional Friends.</span></li>
     </ul>
   </section>
 
@@ -259,19 +280,19 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
     <div class="controls">
       <div class="card reveal">
         <h3>Take it with you</h3>
-        <p>Export a full copy of everything the app holds whenever you want it.</p>
+        <p>Export your own logbook records. Information read from Apple Health and other members' Friends records are excluded.</p>
       </div>
       <div class="card reveal">
         <h3>Remove it completely</h3>
-        <p>Your records live on the phone. Deleting them, or removing the app, takes the data with it.</p>
+        <p>Delete local records in the app. Use Delete my Friends data separately for server records; deleting the app does not delete that account.</p>
       </div>
       <div class="card reveal">
-        <h3>No account, no server</h3>
-        <p>There is nothing to sign in to and no server of ours for your records to sit on.</p>
+        <h3>Sharing stays optional</h3>
+        <p>Friends has separate sharing, leave, block and deletion controls. Personal logging does not depend on a Friends account.</p>
       </div>
       <div class="card reveal">
         <h3>Health stays put</h3>
-        <p>You grant Health access, and you can withdraw it in the Health app. Those readings never leave the phone.</p>
+        <p>You choose Health permissions and can withdraw them in Apple Health. Run syncing and route sharing have separate choices.</p>
       </div>
     </div>
   </section>
@@ -282,13 +303,13 @@ footer{border-top:1px solid var(--line);padding:44px 0 72px}
         is built. The Privacy Policy and Terms of Use are the formal documents, and
         they are what govern your use of the app.</p>
       <div class="foot-links">
-        <a href="https://emmanuelomar.github.io/liftfuel/privacy/2026-10-06/">Privacy Policy</a>
+        <a href="https://emmanuelomar.github.io/liftfuel/privacy/2026-10-10/">Privacy Policy</a>
         <a href="https://emmanuelomar.github.io/liftfuel/terms/2026-10-06/">Terms of Use</a>
         <a href="https://emmanuelomar.github.io/liftfuel/support/">Support</a>
         <a href="mailto:lift.fuel@outlook.com">Contact</a>
       </div>
       <div class="stamp"><span class="dot"></span> Operated by Emmanuel Omar &middot; lift.fuel@outlook.com</div>
-      <div class="stamp" style="margin-top:10px"><span class="dot"></span> Lift &amp; Fuel &middot; v1.0.0 &middot; Security overview &middot; 10 Aug 2026</div>
+      <div class="stamp" style="margin-top:10px"><span class="dot"></span> Lift &amp; Fuel &middot; Security overview &middot; 10 Oct 2026</div>
     </div>
   </footer>
 
